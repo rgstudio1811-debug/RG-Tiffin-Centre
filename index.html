@@ -1,225 +1,215 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="RG Tiffin Centre - Chole Bhature ₹90. 4 Bhature, Chole, Achar & Salad. Party orders for 15+ people.">
-  <title>RG Tiffin Centre | Chole Bhature ₹90</title>
-  <style>
-    *{box-sizing:border-box;margin:0;padding:0}
-    html{scroll-behavior:smooth}
-    body{
-      font-family:Arial,Helvetica,sans-serif;
-      background:#090909;
-      color:#fff;
-      line-height:1.5;
-    }
-    .container{width:min(1120px,92%);margin:auto}
-    header{
-      position:sticky;top:0;z-index:1000;
-      background:rgba(8,8,8,.96);
-      border-bottom:2px solid #e11;
-      backdrop-filter:blur(8px);
-    }
-    nav{
-      min-height:72px;display:flex;align-items:center;
-      justify-content:space-between;gap:20px
-    }
-    .logo{
-      font-size:30px;font-weight:900;color:#ffbd16;
-      letter-spacing:1px
-    }
-    .logo span{display:block;font-size:13px;color:#fff;letter-spacing:4px}
-    .navlinks{display:flex;gap:24px;list-style:none}
-    .navlinks a{color:#fff;text-decoration:none;font-weight:700}
-    .navlinks a:hover{color:#ffbd16}
-    .hero{
-      min-height:640px;display:flex;align-items:center;
-      background:
-        linear-gradient(90deg,rgba(0,0,0,.96) 0%,rgba(0,0,0,.78) 45%,rgba(0,0,0,.35) 100%),
-        url("1000023682.png") center/cover no-repeat;
-      border-bottom:1px solid #222;
-    }
-    .hero-content{max-width:620px;padding:70px 0}
-    .badge{
-      display:inline-block;background:#e21a16;color:#fff;
-      padding:8px 16px;border-radius:4px;font-weight:900;
-      letter-spacing:1px;margin-bottom:18px
-    }
-    h1{font-size:clamp(48px,8vw,92px);line-height:.9;color:#ffb900}
-    h1 span{display:block;color:#fff;font-size:.48em;letter-spacing:5px;margin-top:18px}
-    .tagline{font-size:20px;margin:22px 0;color:#eee}
-    .price{
-      display:inline-flex;align-items:center;gap:10px;
-      background:#e21a16;padding:10px 22px;
-      font-size:38px;font-weight:900;border-radius:8px;
-      box-shadow:0 10px 30px rgba(226,26,22,.25)
-    }
-    .price small{font-size:16px;color:#ffd000}
-    .buttons{display:flex;flex-wrap:wrap;gap:12px;margin-top:25px}
-    .btn{
-      display:inline-block;text-decoration:none;border-radius:7px;
-      padding:14px 22px;font-weight:900
-    }
-    .btn-primary{background:#ffbd16;color:#111}
-    .btn-secondary{border:2px solid #fff;color:#fff}
-    section{padding:70px 0}
-    .section-title{text-align:center;font-size:38px;margin-bottom:35px}
-    .section-title span{color:#ffbd16}
-    .cards{
-      display:grid;grid-template-columns:repeat(4,1fr);gap:18px
-    }
-    .card{
-      background:#151515;border:1px solid #333;border-radius:14px;
-      padding:25px;text-align:center
-    }
-    .icon{font-size:38px;margin-bottom:12px}
-    .card h3{color:#ffbd16;margin-bottom:8px}
-    .offer{
-      background:linear-gradient(135deg,#a70e0e,#e21a16);
-      border-radius:18px;padding:35px;text-align:center;
-      border:1px solid #ffbd16
-    }
-    .offer h2{font-size:42px;margin-bottom:10px}
-    .offer strong{color:#ffd000}
-    .includes{
-      display:grid;grid-template-columns:repeat(4,1fr);gap:15px;
-      margin-top:25px
-    }
-    .include{
-      background:#111;border:1px solid #444;border-radius:10px;
-      padding:18px;font-weight:800
-    }
-    .party{
-      display:grid;grid-template-columns:1fr 1fr;gap:25px;
-      align-items:stretch
-    }
-    .party-box{
-      background:#151515;border:1px solid #333;border-radius:15px;padding:30px
-    }
-    .party-box h3{color:#ffbd16;font-size:28px;margin-bottom:12px}
-    .number{font-size:58px;color:#e21a16;font-weight:900}
-    .contact{
-      background:#ffbd16;color:#111;text-align:center
-    }
-    .contact h2{font-size:42px;margin-bottom:12px}
-    .phones{display:flex;justify-content:center;flex-wrap:wrap;gap:14px;margin-top:22px}
-    .phone{
-      background:#111;color:#fff;text-decoration:none;
-      padding:15px 22px;border-radius:8px;font-size:20px;font-weight:900
-    }
-    footer{background:#050505;text-align:center;padding:25px;color:#aaa}
-    .mobile-menu{display:none}
-    @media(max-width:800px){
-      .navlinks{display:none}
-      .mobile-menu{display:block;color:#ffbd16;font-size:28px}
-      .hero{min-height:600px;background-position:65% center}
-      .hero-content{padding:55px 0}
-      .cards,.includes{grid-template-columns:repeat(2,1fr)}
-      .party{grid-template-columns:1fr}
-    }
-    @media(max-width:500px){
-      nav{min-height:62px}
-      .logo{font-size:25px}
-      .hero{min-height:650px}
-      .price{font-size:31px}
-      .cards,.includes{grid-template-columns:1fr}
-      section{padding:52px 0}
-      .section-title{font-size:30px}
-      .offer h2,.contact h2{font-size:31px}
-      .phone{font-size:17px;width:100%}
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="RG Tiffin Centre Mathura - स्वाद घर जैसा, सेहत आपके लिए। Fresh, hygienic and homely tiffin delivery.">
+<title>RG Tiffin Centre | Mathura</title>
+<style>
+:root{
+  --green:#075b2c; --green2:#0b7438; --maroon:#7b073d; --gold:#d6a928;
+  --cream:#fffaf0; --text:#222; --white:#fff;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:Arial,"Noto Sans Devanagari",sans-serif;background:#f8f4e8;color:var(--text);line-height:1.55}
+a{text-decoration:none;color:inherit}
+.container{width:min(1120px,92%);margin:auto}
+header{background:var(--cream);border-bottom:3px solid var(--gold);position:sticky;top:0;z-index:20;box-shadow:0 2px 12px #0002}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.logo{font-weight:900;color:var(--maroon);font-size:27px;letter-spacing:1px}
+.logo span{display:block;font-size:12px;color:var(--green);letter-spacing:2px}
+nav{display:flex;gap:22px;font-weight:700;color:var(--green)}
+nav a:hover{color:var(--maroon)}
+.btn{display:inline-block;padding:12px 19px;border-radius:28px;font-weight:800;border:2px solid var(--green);transition:.2s}
+.btn.primary{background:var(--maroon);border-color:var(--maroon);color:white}
+.btn.green{background:var(--green);color:white}
+.btn:hover{transform:translateY(-2px)}
+.hero{padding:62px 0 48px;background:linear-gradient(135deg,#fffaf0,#edf6e9)}
+.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;align-items:center;gap:40px}
+.badge{display:inline-block;background:var(--maroon);color:#fff;padding:8px 17px;border-radius:20px;font-weight:800;margin-bottom:15px}
+h1{font-size:clamp(42px,7vw,76px);line-height:.95;color:var(--maroon);margin-bottom:7px}
+h1 span{display:block;color:var(--green);font-size:.62em;letter-spacing:2px;margin-top:12px}
+.tagline{font-size:25px;font-weight:800;color:var(--green);margin:15px 0}
+.hero p{font-size:18px;max-width:620px}
+.hero-buttons{display:flex;gap:12px;flex-wrap:wrap;margin-top:25px}
+.hero-card{background:white;border:3px solid var(--gold);border-radius:28px;padding:28px;box-shadow:0 15px 40px #0002;text-align:center}
+.plate{font-size:90px;margin-bottom:5px}
+.hero-card h3{color:var(--green);font-size:24px}
+.hero-card p{font-size:15px;margin:8px 0 18px}
+.features{padding:28px 0;background:white}
+.features-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.feature{padding:18px;border-radius:16px;background:#f4f8ef;text-align:center;border:1px solid #dbe6d5}
+.feature b{display:block;color:var(--green);font-size:19px}
+section{padding:55px 0}
+.section-title{text-align:center;color:var(--green);font-size:34px;margin-bottom:10px}
+.section-sub{text-align:center;margin:0 auto 30px;max-width:700px;color:#666}
+.menu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+.card{background:white;border-radius:18px;border:1px solid #ddd;overflow:hidden;box-shadow:0 7px 20px #0001}
+.card-head{background:var(--green);color:white;padding:15px 20px;font-size:24px;font-weight:900}
+.card-head.maroon{background:var(--maroon)}
+.menu-item{display:flex;justify-content:space-between;gap:20px;padding:17px 20px;border-bottom:1px solid #eee}
+.menu-item:last-child{border-bottom:0}
+.item-name{font-weight:700}.item-desc{font-size:14px;color:#666;margin-top:3px}
+.price{font-size:22px;color:var(--maroon);font-weight:900;white-space:nowrap}
+.week{overflow-x:auto}.week table{width:100%;border-collapse:collapse;background:white;border-radius:18px;overflow:hidden;min-width:650px}
+th{background:var(--maroon);color:white;padding:13px}td{padding:13px;border-bottom:1px solid #eee;text-align:center}tr:nth-child(even){background:#fffaf2}
+.plan-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan{background:white;border:2px solid var(--green);border-radius:20px;padding:25px;text-align:center}
+.plan h3{color:var(--green);font-size:21px}.plan .big{font-size:34px;color:var(--maroon);font-weight:900;margin:8px}
+.best{border-color:var(--gold);transform:translateY(-5px)}
+.contact{background:linear-gradient(135deg,var(--green),#063e21);color:white}
+.contact .section-title{color:white}
+.contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:25px;align-items:center}
+.contact-card{background:white;color:#222;padding:25px;border-radius:20px}
+.contact-row{display:flex;gap:13px;align-items:center;margin:14px 0;font-size:18px}
+.contact-row b{color:var(--maroon)}
+footer{background:#063e21;color:white;text-align:center;padding:20px}
+.float{position:fixed;right:18px;bottom:18px;background:#20b858;color:white;padding:15px 20px;border-radius:30px;font-weight:900;box-shadow:0 7px 22px #0004;z-index:30}
+@media(max-width:800px){
+ nav{display:none}.hero-grid,.contact-grid{grid-template-columns:1fr}.menu-grid{grid-template-columns:1fr}.plan-grid,.features-grid{grid-template-columns:1fr}
+ .hero{text-align:center}.hero p{margin:auto}.hero-buttons{justify-content:center}.hero-card{max-width:450px;margin:auto}
+ section{padding:42px 0}h1{font-size:56px}.section-title{font-size:29px}
+}
+</style>
 </head>
 <body>
-
 <header>
-  <div class="container">
-    <nav>
-      <div class="logo">RG <span>TIFFIN CENTRE</span></div>
-      <ul class="navlinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#offer">Menu</a></li>
-        <li><a href="#party">Party Orders</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="mobile-menu">☰</div>
-    </nav>
+  <div class="container nav">
+    <a class="logo" href="#home">RG <span>TIFFIN CENTRE</span></a>
+    <nav><a href="#menu">Menu</a><a href="#plans">Monthly Plan</a><a href="#order-time">Order Time</a><a href="#services">Services</a><a href="#contact">Contact</a></nav>
+    <a class="btn primary" href="tel:8865918014">Order Now</a>
   </div>
 </header>
 
-<main>
-  <section class="hero" id="home">
-    <div class="container">
-      <div class="hero-content">
-        <div class="badge">BEST QUALITY • FRESH • HYGIENIC</div>
-        <h1>CHOLE<br>BHATURE <span>RG TIFFIN CENTRE</span></h1>
-        <p class="tagline">Ghar jaisa swaad • Fresh ingredients • Clean & hygienic</p>
-        <div class="price">₹90 <small>ONLY / ONE PLATE</small></div>
-        <div class="buttons">
-          <a class="btn btn-primary" href="#contact">ORDER NOW</a>
-          <a class="btn btn-secondary" href="#party">PARTY ORDER</a>
-        </div>
+<main id="home">
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <div class="badge">शुद्ध स्वाद • घर जैसा खाना</div>
+      <h1>RG<span>TIFFIN CENTRE</span></h1>
+      <div class="tagline">स्वाद घर जैसा, सेहत आपके लिए</div>
+      <p>Mathura में fresh, hygienic और homely tiffin — रोज़ाना साफ-सुथरी packing और समय पर delivery के साथ।</p>
+      <div class="hero-buttons">
+        <a class="btn primary" href="tel:8865918014">📞 8865918014</a>
+        <a class="btn green" href="https://wa.me/916397189976?text=Namaste%20RG%20Tiffin%20Centre%2C%20mujhe%20tiffin%20order%20karna%20hai." target="_blank">💬 WhatsApp Order</a>
       </div>
     </div>
-  </section>
-
-  <section id="offer">
-    <div class="container">
-      <h2 class="section-title">What's <span>Included?</span></h2>
-      <div class="cards">
-        <div class="card"><div class="icon">🫓</div><h3>4 Bhature</h3><p>Fresh & fluffy bhature</p></div>
-        <div class="card"><div class="icon">🥘</div><h3>Chole</h3><p>Rich & tasty chole</p></div>
-        <div class="card"><div class="icon">🥒</div><h3>Salad</h3><p>Fresh salad</p></div>
-        <div class="card"><div class="icon">🌶️</div><h3>Achar</h3><p>Perfect side pickle</p></div>
-      </div>
-
-      <div class="offer" style="margin-top:35px">
-        <h2>ONE PLATE = <strong>FULL SATISFACTION ❤️</strong></h2>
-        <p>4 Bhature + Chole + Achar + Salad — <strong>₹90 only</strong></p>
-      </div>
+    <div class="hero-card">
+      <div class="plate">🍱</div>
+      <h3>FRESH & HYGIENIC</h3>
+      <p>हर दिन ताज़ा • साफ-सुथरा • घर जैसा</p>
+      <a class="btn primary" href="#menu">आज का Menu देखें</a>
     </div>
-  </section>
+  </div>
+</section>
 
-  <section id="party">
-    <div class="container">
-      <h2 class="section-title">Party <span>Orders</span></h2>
-      <div class="party">
-        <div class="party-box">
-          <h3>🎉 For Party</h3>
-          <div class="number">15+</div>
-          <p><strong>Logon ke liye kam se kam</strong></p>
-          <p style="margin-top:12px;color:#bbb">Best choice for small get-together, birthday, events & parties.</p>
-        </div>
-        <div class="party-box">
-          <h3>⭐ Why Choose Us?</h3>
-          <p>✅ Hygienic & Clean</p>
-          <p>✅ Fresh Ingredients</p>
-          <p>✅ On-Time Delivery</p>
-          <p>✅ Best Taste Every Time</p>
-        </div>
-      </div>
-    </div>
-  </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>📞 ORDER NOW!</h2>
-      <p>For Delivery & Party Orders</p>
-      <div class="phones">
-        <a class="phone" href="tel:8865918014">📱 8865918014</a>
-        <a class="phone" href="tel:6397189976">📱 6397189976</a>
-      </div>
-      <div class="buttons" style="justify-content:center">
-        <a class="btn btn-primary" href="https://wa.me/918865918014?text=Hello%20RG%20Tiffin%20Centre%2C%20mujhe%20Chole%20Bhature%20order%20karna%20hai.">WhatsApp Order</a>
-      </div>
+<section id="order-time" style="padding:28px 0;background:#fff8e8">
+  <div class="container">
+    <div class="card" style="padding:24px;text-align:center;border:2px solid var(--gold)">
+      <h2 style="color:var(--maroon);font-size:30px;margin-bottom:8px">⏰ Order Timing</h2>
+      <p style="font-size:18px;font-weight:700;color:var(--green)">सुबह: <b>8:00 AM – 10:00 AM</b></p>
+      <p style="font-size:18px;font-weight:700;color:var(--green)">शाम: <b>3:00 PM – 5:00 PM</b></p>
+      <p style="margin-top:8px;color:#666">इन समयों के दौरान अपना Tiffin Order करें।</p>
     </div>
-  </section>
+  </div>
+</section>
+
+<div class="features">
+ <div class="container features-grid">
+  <div class="feature">🌿 <b>Healthy</b>पौष्टिक और स्वादिष्ट भोजन</div>
+  <div class="feature">🛡️ <b>Hygienic</b>साफ-सुथरी तैयारी और packing</div>
+  <div class="feature">🏠 <b>Homely</b>घर जैसा स्वाद</div>
+ </div>
+</div>
+
+<section id="menu">
+ <div class="container">
+  <h2 class="section-title">🍛 हमारा Menu</h2>
+  <p class="section-sub">आप अपनी जरूरत के अनुसार Regular, Special या Monthly Tiffin चुन सकते हैं।</p>
+  <div class="menu-grid">
+   <div class="card">
+    <div class="card-head">REGULAR TIFFIN</div>
+    <div class="menu-item"><div><div class="item-name">4 रोटी + दाल + 1 सब्जी + चावल + सलाद</div></div><div class="price">₹90</div></div>
+    <div class="menu-item"><div><div class="item-name">6 रोटी + दाल + 1 सब्जी + चावल + सलाद</div></div><div class="price">₹110</div></div>
+   </div>
+   <div class="card">
+    <div class="card-head maroon">SPECIAL TIFFIN</div>
+    <div class="menu-item"><div><div class="item-name">4 रोटी + पनीर सब्जी + दाल + जीरा राइस + रायता + सलाद</div></div><div class="price">₹140</div></div>
+    <div class="menu-item"><div><div class="item-name">स्पेशल थाली — पनीर + दाल + चावल + 4 रोटी + रायता + सलाद + मिठाई</div></div><div class="price">₹160</div></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section style="background:#fffdf6" id="weekly">
+ <div class="container">
+  <h2 class="section-title">📅 साप्ताहिक Menu</h2>
+  <p class="section-sub">सोमवार से शनिवार Regular tiffin और रविवार Special menu।</p>
+  <div class="week"><table>
+   <thead><tr><th>दिन</th><th>Menu</th><th>Price</th></tr></thead>
+   <tbody>
+    <tr><td>☀️ सोमवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>🌙 मंगलवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>🌿 बुधवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>⭐ गुरुवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>🌸 शुक्रवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>🌳 शनिवार</td><td>4 रोटी, दाल तड़का, सब्जी, चावल, सलाद</td><td><b>₹90</b></td></tr>
+    <tr><td>☀️ रविवार</td><td>पूड़ी, पनीर सब्जी, खीर/हलवा, सब्जी, सलाद</td><td><b>₹90</b></td></tr>
+   </tbody>
+  </table></div>
+ </div>
+</section>
+
+<section id="plans">
+ <div class="container">
+  <h2 class="section-title">📆 Monthly Plan</h2>
+  <p class="section-sub">₹90 वाले tiffin के हिसाब से convenient monthly plans।</p>
+  <div class="plan-grid">
+   <div class="plan"><h3>केवल Lunch</h3><div class="big">₹2700</div><p>Monthly lunch tiffin</p><a class="btn green" href="https://wa.me/916397189976?text=Lunch%20Monthly%20Plan%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank">Plan पूछें</a></div>
+   <div class="plan"><h3>केवल Dinner</h3><div class="big">₹2700</div><p>Monthly dinner tiffin</p><a class="btn green" href="https://wa.me/916397189976?text=Dinner%20Monthly%20Plan%20ke%20baare%20mein%20jaankari%20chahiye." target="_blank">Plan पूछें</a></div>
+   <div class="plan best"><h3>Lunch + Dinner</h3><div class="big">₹5400</div><p>Best Value • दोनों meals</p><a class="btn primary" href="https://wa.me/916397189976?text=Lunch%20%2B%20Dinner%20Monthly%20Plan%20chahiye." target="_blank">Best Value</a></div>
+  </div>
+ </div>
+</section>
+
+<section id="services" style="background:#f0f7ed">
+ <div class="container">
+  <h2 class="section-title">⚙️ Additional Services</h2>
+  <div class="menu-grid">
+   <div class="card" style="padding:25px">
+    <h3 style="color:var(--green);font-size:25px;margin-bottom:12px">हमारी खासियत</h3>
+    <p>✅ समय पर डिलीवरी</p><p>✅ शुद्ध, ताज़ा और घर जैसा भोजन</p><p>✅ साफ-सुथरी पैकिंग</p><p>✅ रोज़ाना fresh preparation</p>
+   </div>
+   <div class="card" style="padding:25px">
+    <h3 style="color:var(--green);font-size:25px;margin-bottom:12px">किसके लिए?</h3>
+    <p>👨‍🎓 Students</p><p>👨‍💼 Office / Working people</p><p>🏠 Families</p><p>🍱 Regular tiffin customers</p>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="container">
+  <h2 class="section-title">📞 Order Now</h2>
+  <p class="section-sub" style="color:#eaf4e9">आज ही अपना tiffin बुक करें।</p>
+  <div class="contact-grid">
+   <div>
+    <h3 style="font-size:30px;margin-bottom:10px">RG TIFFIN CENTRE</h3>
+    <p>स्वाद घर जैसा, सेहत आपके लिए ❤️</p>
+    <p style="margin-top:15px">📍 Mathura, Uttar Pradesh</p>
+   </div>
+   <div class="contact-card">
+    <div class="contact-row">📞 <span><b>Call:</b> <a href="tel:8865918014">8865918014</a></span></div>
+    <div class="contact-row">💬 <span><b>WhatsApp:</b> <a href="https://wa.me/916397189976" target="_blank">6397189976</a></span></div>
+    <a class="btn primary" style="width:100%;text-align:center;margin-top:5px" href="https://wa.me/916397189976?text=Namaste%20RG%20Tiffin%20Centre%2C%20mujhe%20tiffin%20order%20karna%20hai." target="_blank">💬 WhatsApp पर Order करें</a>
+   </div>
+  </div>
+ </div>
+</section>
 </main>
 
-<footer>
-  <p>© 2026 RG Tiffin Centre • Best Food • Best Mood</p>
-</footer>
-
+<a class="float" href="https://wa.me/916397189976?text=Namaste%20RG%20Tiffin%20Centre%2C%20mujhe%20tiffin%20order%20karna%20hai." target="_blank">💬 WhatsApp Order</a>
+<footer>© 2026 RG Tiffin Centre • Mathura, Uttar Pradesh • Thank You for Trusting Us ❤️</footer>
 </body>
 </html>
