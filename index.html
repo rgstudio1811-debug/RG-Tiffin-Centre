@@ -70,7 +70,7 @@ footer{background:#17100b;color:#fff;text-align:center;padding:35px 15px}
 
 <div class="card"><h3>🔥 Chole Bhature</h3><p>4 Bhature + Chhole + Achar + Salad</p><div class="price">₹90 / Plate</div><p><b>Party Order: Minimum 15 Plates</b></p><button type="button" class="add chole" data-name="Chole Bhature" data-price="90">Add to Cart</button></div>
 
-<div class="card"><h3>☀️ Sunday Special</h3><p>2 Poori + Paneer Sabzi + Kheer/Halwa + Sabzi + Salad</p><div class="price">₹90</div><button type="button" class="add" data-name="Sunday Special" data-price="90">Add to Cart</button></div>
+<div class="card"><h3>☀️ Sunday Special</h3><p>6 Poori + Paneer Sabzi + Kheer/Halwa + Sabzi + Salad</p><div class="price">₹90</div><button type="button" class="add" data-name="Sunday Special" data-price="90">Add to Cart</button></div>
 
 </div>
 </section>
@@ -79,6 +79,62 @@ footer{background:#17100b;color:#fff;text-align:center;padding:35px 15px}
 <h2>🔥 Chole Bhature Party Special</h2><p>4 Bhature + Chhole + Achar + Salad</p><h2>₹90 / Plate</h2><p>👥 Minimum Order: 15 Plates</p>
 <a class="btn wa" href="https://wa.me/918865918014?text=Hello%20RG%20Tiffin%20Centre%2C%20mujhe%20Chole%20Bhature%20party%20order%20karna%20hai" target="_blank">💬 Party Order</a>
 </div>
+
+
+<section id="paratha-menu">
+<h2 class="title">🥘 Paratha Corner</h2>
+<p class="sub">Fresh Paratha • Dahi • Achar</p>
+<div class="grid">
+
+<div class="card">
+<h3>🥔 Aloo Paratha</h3>
+<p>2 Aloo Paratha + Dahi + Achar</p>
+<div class="price">₹90</div>
+<p><b>Minimum Order: 15 Plates</b></p>
+<button type="button" class="add paratha" data-name="Aloo Paratha" data-price="90">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>🧅 Pyaj Paratha</h3>
+<p>2 Pyaj Paratha + Dahi + Achar</p>
+<div class="price">₹100</div>
+<p><b>Minimum Order: 15 Plates</b></p>
+<button type="button" class="add paratha" data-name="Pyaj Paratha" data-price="100">Add to Cart</button>
+</div>
+
+<div class="card">
+<h3>🧀 Paneer Paratha</h3>
+<p>2 Paneer Paratha + Dahi + Achar</p>
+<div class="price">₹150</div>
+<p><b>Minimum Order: 15 Plates</b></p>
+<button type="button" class="add paratha" data-name="Paneer Paratha" data-price="150">Add to Cart</button>
+</div>
+
+</div>
+</section>
+
+
+
+<section id="patties-menu">
+<h2 class="title">🥟 Patties Corner</h2>
+<p class="sub">Minimum Order: 15 Patties</p>
+<div class="grid">
+
+<div class="card"><h3>🥔 Aloo Patties</h3><p>Crispy Aloo Filled Patties</p><div class="price">₹20</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Aloo Patties" data-price="20">Add to Cart</button></div>
+
+<div class="card"><h3>🧀 Paneer Patties</h3><p>Paneer Stuffed Patties</p><div class="price">₹50</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Paneer Patties" data-price="50">Add to Cart</button></div>
+
+<div class="card"><h3>🍕 Pizza Patties</h3><p>Cheese & Veg Pizza Filling</p><div class="price">₹60</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Pizza Patties" data-price="60">Add to Cart</button></div>
+
+<div class="card"><h3>🌶️ Masala Patties</h3><p>Spicy Masala Filled Patties</p><div class="price">₹30</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Masala Patties" data-price="30">Add to Cart</button></div>
+
+<div class="card"><h3>🧈 Cheese Patties</h3><p>Cheesy Crispy Patties</p><div class="price">₹60</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Cheese Patties" data-price="60">Add to Cart</button></div>
+
+<div class="card"><h3>🔥 Tandoori Patties</h3><p>Tandoori Flavour Patties</p><div class="price">₹40</div><p><b>Minimum Order: 15 Patties</b></p><button type="button" class="add patties" data-name="Tandoori Patties" data-price="40">Add to Cart</button></div>
+
+</div>
+</section>
+
 
 <section>
 <h2 class="title">📅 Monthly Plans</h2><p class="sub">Regular Tiffin Monthly Service</p>
@@ -124,10 +180,10 @@ function scrollToCart(){
   if(el) el.scrollIntoView({behavior:"smooth",block:"start"});
 }
 
-function add(name,price,isChole){
+function add(name,price,isChole,isParatha,isPatties){
   var item=cart.find(function(x){return x.name===name;});
   if(item){item.qty += 1;}
-  else{cart.push({name:name,price:Number(price),qty:isChole?15:1});}
+  else{cart.push({name:name,price:Number(price),qty:(isChole || isParatha || isPatties)?15:1});}
   render();
   setTimeout(scrollToCart,50);
 }
@@ -166,7 +222,7 @@ function sendOrder(){
 
 document.querySelectorAll(".add").forEach(function(btn){
   btn.addEventListener("click",function(){
-    add(btn.getAttribute("data-name"),btn.getAttribute("data-price"),btn.classList.contains("chole"));
+    add(btn.getAttribute("data-name"),btn.getAttribute("data-price"),btn.classList.contains("chole"),btn.classList.contains("paratha"),btn.classList.contains("patties"));
   });
 });
 
